@@ -64,9 +64,8 @@
 
 ### Learning the Language
 
-[Eloquent JavaScript](https://eloquentjavascript.net/) - an easy to read, comprehensive JS guide. Available online and in print. (New print version to be released 11/2018).
-
-[You Don’t Know JS](https://github.com/getify/You-Dont-Know-JS) - a JS guide available on GitHub. More technical reading, and includes exercises in each chapter.
+- [Eloquent JavaScript](https://eloquentjavascript.net/) - an easy to read, comprehensive JS guide. Available online and in print. (New print version to be released 11/2018).
+- [You Don’t Know JS](https://github.com/getify/You-Dont-Know-JS) - a JS guide available on GitHub. More technical reading, and includes exercises in each chapter.
 
 ### Tutorials
 
