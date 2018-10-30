@@ -2,6 +2,12 @@
 
 "There are a million junior coders in the world, the thing that gets people hired is what sets them apart from the masses, what makes them a great team member, a great employee, and a great colleague."
 
+## Resources
+
+- https://learntocodewith.me/posts/non-technical-skills/
+- https://www.themuse.com/advice/5-skills-you-need-to-work-on-to-get-aheadno-matter-what-industry-youre-in
+- https://www.themuse.com/advice/9-soft-skills-thatll-put-you-ahead-of-the-competition-according-to-real-hiring-managers
+
 ## Important Skills
 
 - Interpersonal Communication: building relationships and rapport with others
@@ -17,7 +23,7 @@
 
 I am very good with people. It is easy for me to have positive interactions with people. It is not as easy for me to pursue relationships with people, establishing a connection, especially solely online. I find that some of this insecurity comes from confidence, so I have been working on improving that. Utilizing social media more has been one of my ways to practice communicating with people online. I am also excited to start going to coding meetups in my area where I can meet people face-to-face, which is more comfortable for me. I plan on going to one starting in November that meets every two weeks, so the regularity of it will provide opportunities to build rapport with other regular attendees.
 
-**Accountability: 9/10** 
+**Accountability: 9/10**
 
 I am very organized with my schedule and committed to punctuality, timely communication, and accomplishing tasks. One thing I want to work on is investing time in side projects that are not necessary or do not have a deadline to motivate me. One project I started to try and help with this is a GitHub repository (called lindsayatbloc) for blogging my Bloc experience and posting my own code exercises. This will give me practice doing something I am not required to do, but I know will benefit me in the long run.
 
