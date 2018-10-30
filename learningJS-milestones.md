@@ -40,4 +40,4 @@ var introduce = function(givenName, nickName){
 var meet = introduce("Lindsay", "Linds");
 console.log(meet("family"));
 ```
-Much better!
+Much better! I'm sure I will learn something two weeks from now that makes this updated code look like sludge, but I can see how far I have come in such a short amount of time. It is examples like this, though, that show me how I can have patience as I learn and confidence that I will only grow as a developer. 
