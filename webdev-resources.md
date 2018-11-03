@@ -2,6 +2,7 @@
 
 ## Index
 
+- From Mentor
 - General Tutorials & Tools
 - HTML& CSS
 - JavaScript
@@ -10,7 +11,9 @@
 - Community Research & More
 
 
+## From Mentor
 
+- [Google doc from Alex R.](https://docs.google.com/document/d/1Z-PG_XiB6ZfBixwhx_BWf6LhcIUDMw3reX7i_7Fy6fQ/edit)
 
 ## General Tutorials & Tools
 
