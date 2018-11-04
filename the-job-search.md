@@ -7,6 +7,7 @@
 - https://learntocodewith.me/posts/non-technical-skills/
 - https://www.themuse.com/advice/5-skills-you-need-to-work-on-to-get-aheadno-matter-what-industry-youre-in
 - https://www.themuse.com/advice/9-soft-skills-thatll-put-you-ahead-of-the-competition-according-to-real-hiring-managers
+- https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/
 
 ## Important Skills
 
