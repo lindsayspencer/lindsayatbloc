@@ -7,28 +7,49 @@
 <style>
 body {
   font-family: 'Montserrat', sans-serif;
+  /*background-image: url("background.png");*/
   background-color: #fff;
 }
   h1 {
     text-align: center;
   }
-  table {
+  ul {
     max-width: 800px;
     margin: 0 auto;
+
+    list-style: none;
+    padding: 0;
   }
   h3{
-    width: 100%;
+    text-align: center;
     line-height: 2em;
-    background-color: rgb(51, 60, 255);
-    color: #ffffff;
+    color: #fff;
+    padding-top: 5px;
   }
- td {
-  margin: 10px;
-  border: 2px solid rgb(51, 60, 255);
-  padding: 10px;
+  .title {
+   background-color: rgb(51, 60, 255);
+   width: 100%;
+   height: 3em;
+   margin: 0;
+   padding: 0;
+ }
+li {
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 2px 2px 2px #dcdcdc;
 }
-  h3 > a {
-    color: #ffffff;
+li:hover {
+  box-shadow: 4px 4px 4px 4px #dcdcdc;
+}
+p.readmore {
+  color: rgb(51, 60, 255);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+  a {
     text-decoration: underline;
   }
   a:hover {
@@ -36,19 +57,10 @@ body {
   }
   p {
     font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
   }
-  button {
-    width: 100px;
-    height: 50px;
-    color: rgb(51, 60, 255);
-    font-family: 'Montserrat', sans-serif;
+  .centered {
     text-align: center;
-    border: 2px solid rgb(51, 60, 255);
-    box-shadow: 2px 2px 2px;
-    background-color: #fff;
-  }
-  button:hover {
-    box-shadow: none;
   }
 
 </style>
@@ -56,7 +68,7 @@ body {
 <body>
 
   <h1>Welcome to <em>Nosey News</em></h1>
-  <p>This is the basic version of <em>Nosey News</em>. It uses <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a> to pull JSON data, including articles, links, and descriptions.</p>
+  <p class="centered">This is the basic version of <em>Nosey News</em>. It uses <a href="https://newsapi.org/">NewsAPI.org</a> to pull JSON data, including articles, links, and descriptions.</p>
 
 <script>
   let url=("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=8e635c537e7c4f3aa9a2074285e29875");
@@ -68,14 +80,20 @@ body {
 
     .then(data => {
       let articles = data.articles;
-      let newsList = document.createElement("table");
+      let newsList = document.createElement("ul");
       let body = document.querySelector("body");
       body.appendChild(newsList);
       articles.map(item => {
-        let newsItem = document.createElement("tr");
-        newsItem.innerHTML = '<td><h3>' + item.title + '</h3>' + '<p>' + item.content + '</p><form><a href="' + item.url + '"><button>Read More...</button></a></td>';
+        let newsItem = document.createElement("li");
+        let newsPreview = document.createElement("p");
+        let newsLink = document.createElement("p");
+        newsLink.setAttribute("class", "readmore");
+        newsItem.innerHTML = '<div class="title"><h3>' + item.title + '</h3></div>';
+        newsPreview.innerHTML = item.content;
+        newsLink.innerHTML = '<a href="' + item.url + '">Read More →</a>'
         newsList.appendChild(newsItem);
-
+        newsItem.appendChild(newsPreview);
+        newsPreview.appendChild(newsLink);
       });
     })
 
