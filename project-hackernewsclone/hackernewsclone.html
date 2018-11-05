@@ -3,6 +3,7 @@
 <head>
   <title>Nosy News</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <style>
 body {
   font-family: 'Montserrat', sans-serif;
@@ -14,17 +15,34 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
- td:nth-child(odd) {
-  background-color: rgb(51, 60, 255, 0.2);
-  padding: 10px;
+  h3{
+    width: 100%;
+    line-height: 2em;
+    background-color: rgb(51, 60, 255);
+    color: #ffffff;
+  }
+ td {
+  margin: 10px;
   border: 2px solid rgb(51, 60, 255);
-
+  padding: 10px;
 }
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
 
 </style>
 </head>
 <body>
 
+  <h1>Welcome to <em>Nosey News</em></h1>
+  <p></p>
 
 <script>
   let url=("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=8e635c537e7c4f3aa9a2074285e29875")
@@ -41,7 +59,7 @@ body {
       body.appendChild(newsList);
       articles.map(item => {
         let newsItem = document.createElement("tr");
-        newsItem.innerHTML = '<td><a href="' + item.url + '">' + item.title + '</a>' + '<p>' + item.content + '</p></td>';
+        newsItem.innerHTML = '<td><a href="' + item.url + '"><h3>' + item.title + '</h3></a>' + '<p>' + item.content + '</p></td>';
         newsList.appendChild(newsItem);
 
       });
