@@ -7,6 +7,7 @@
 <style>
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
 }
   h1 {
     text-align: center;
@@ -26,7 +27,7 @@ body {
   border: 2px solid rgb(51, 60, 255);
   padding: 10px;
 }
-  a {
+  h3 > a {
     color: #ffffff;
     text-decoration: underline;
   }
@@ -36,16 +37,29 @@ body {
   p {
     font-family: 'Open Sans', sans-serif;
   }
+  button {
+    width: 100px;
+    height: 50px;
+    color: rgb(51, 60, 255);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 2px solid rgb(51, 60, 255);
+    box-shadow: 2px 2px 2px;
+    background-color: #fff;
+  }
+  button:hover {
+    box-shadow: none;
+  }
 
 </style>
 </head>
 <body>
 
   <h1>Welcome to <em>Nosey News</em></h1>
-  <p></p>
+  <p>This is the basic version of <em>Nosey News</em>. It uses <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a> to pull JSON data, including articles, links, and descriptions.</p>
 
 <script>
-  let url=("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=8e635c537e7c4f3aa9a2074285e29875")
+  let url=("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=8e635c537e7c4f3aa9a2074285e29875");
 
   fetch(url)
     .then(r => {
@@ -59,7 +73,7 @@ body {
       body.appendChild(newsList);
       articles.map(item => {
         let newsItem = document.createElement("tr");
-        newsItem.innerHTML = '<td><a href="' + item.url + '"><h3>' + item.title + '</h3></a>' + '<p>' + item.content + '</p></td>';
+        newsItem.innerHTML = '<td><h3>' + item.title + '</h3>' + '<p>' + item.content + '</p><form><a href="' + item.url + '"><button>Read More...</button></a></td>';
         newsList.appendChild(newsItem);
 
       });
