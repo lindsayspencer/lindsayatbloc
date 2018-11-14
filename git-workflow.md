@@ -1,10 +1,11 @@
 # Git Workflow
 
-Using the version control software Git is practically necessary now to track changes in your code and allow teams to seamlessly work on the same project. It is the virtual assistant, there to keep your work organized and under control. If you're new to using Git, here is an overview of how to use it in your next project.
+At my first coding job, I managed 100+ pages of HTML, CSS, JS, and ASP for 2 years. To save my work in case I needed to roll back an update, I kept three USB drives: one I updated weekly, one I updated monthly, and one I updated 6 biyearly. I know, laugh away. This was not the best system, but it was all I could think to do at the time. Today, I avoid can ensure every file and code change is saved using Git.   
+Using Git is practically necessary these days to track changes in your code and allow teams to collaborate seamlessly. It is a virtual assistant that exists to keep your work organized and under control. If you're new to Git, here is an overview of how to use it in your next project.
 
 ## How It Works
 
-Git is a version control software, which basically means it is a program that helps track the various changes and "versions" of your code throughout a project. The command line is used to access the Git software and tell it what to do. Other programs like Git Bash are also available so you do not have to use your computer's actual command prompt.
+Git is a version control software, which basically means it is a program that helps track the various changes and "versions" of your code throughout a project. The command line is used to access the Git software and tell it what to do. You may want to read my article on (getting started with the command line) if it is new territory for you.
 
 When Git starts tracking a certain project, a **repository** is made for all the information it records. A repository will contain **commits** and **branches**.
 
